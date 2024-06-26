@@ -1,12 +1,13 @@
 # BREKOR ENTREPRISE - Landing page 
 
 ## Description
-Dans le cadre du développement de notre landing page, une combinaison de technologies telles que HTML, CSS, JavaScript et Bootstrap sera utilisée. Ces outils seront enrichis de Call-To-Action (CTA) pour orienter les utilisateurs vers notre MVP. Ce dernier sera conçu avec une palette diversifiée de technologies pour une expérience utilisateur plus avancée.
-
+Pour le développement de notre landing page, nous utiliserons une combinaison de technologies telles que HTML, CSS, JavaScript et Bootstrap.
+Ces outils nous permettront de créer une interface utilisateur attrayante et réactive.
+Des Call-To-Action (CTA) stratégiquement placés guideront les utilisateurs vers notre MVP. L'objectif est d'offrir une expérience utilisateur fluide et intuitive, favorisant l'engagement et la conversion.
 
 ## Arborescence des fichiers
 ```
-brekor_artiste/
+brekor_entreprise/
 ├── assets/
 │   ├── css/
 │   │   ├── style.css
@@ -28,6 +29,6 @@ brekor_artiste/
 
 ## Tester la solution déployée
 
-Vous pouvez accéder à l'outil déployé en suivant ce lien : [Brekor Artiste](https://artiste.brekor.fr).
+Vous pouvez accéder à l'outil déployé en suivant ce lien : [Brekor Entreprise](https://entreprise.brekor.fr).
 
 N'hésitez pas à explorer la landing page et à nous faire part de vos retours !
