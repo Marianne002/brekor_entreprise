@@ -1,0 +1,391 @@
+/* FONTS */
+/* @import url("https://use.typekit.net/mvs5bxy.css"); */
+
+
+/* GENERAL */
+*, *::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white !important;
+    scrollbar-width: none !important;
+}
+
+/* TEXT */
+h1, h2, h3, a button {
+    font-family: "hoss-round", sans-serif;
+}
+h1,h3{
+    font-size: 57.79px !important;
+    font-style: normal;
+    font-weight: 900 !important;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+a {
+    text-decoration: none !important;
+}
+.lead {
+    margin: 30px 0 30px 0 !important;
+}
+
+/* BACKGROUND */
+.bg-darker {
+    background-image: url('/assets/img/background-landing-page.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PADDING& MARGIN: SECTION + FOOTER*/
+section, footer {
+    margin-top: 37px;   
+}
+section {
+    padding: 70px;
+}
+article {
+    padding: 70px 0 0 0;
+}
+footer .row{
+    padding: 70px 70px 0 70px;
+}
+footer .border-top {
+    margin: 0 70px;
+}
+footer img:not(footer .btn img){
+    margin-bottom: 40px;
+}
+footer h5 {
+    margin-bottom: 20px;
+}
+
+/* NAVBAR */
+.navbar-scrolled,
+.navbar-menu-open {
+    background-color: #181a1e;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+/* GRADIENT EFFECT */
+/* BUTTONS GRADIENT*/
+.btn-gradient, .input-group .btn {
+    padding: 13px 16px !important;
+    border-radius: 18px;
+    border: 0;
+    background: linear-gradient(to right, #FF1493, #224BF4) !important;
+}
+
+/* COLOR GRADIENT */
+.gradient-color {
+    background: linear-gradient(to right, #FF1493, #224BF4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* BORDER GRADIENT */
+.gradient-border, 
+.gradient-border-home, 
+.gradient-border-footer {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+}
+.gradient-border::before, 
+.gradient-border-home::before, 
+.gradient-border-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 1px;
+    background: linear-gradient(to right, #FF1493, #224BF4);
+    -webkit-mask: 
+        linear-gradient(#fff 0%, #fff 100%) content-box, 
+        linear-gradient(#fff 0%, #fff 100%);
+    -webkit-mask-composite: xor; 
+    mask-composite: exclude; 
+    z-index: -1;
+}
+.gradient-border-footer, 
+.gradient-border-footer::before {
+    border-radius: 15px 15px 0 0;
+}
+
+
+/* CARDS */
+.card-container {
+    border-radius: 25px !important;
+    border: 2px solid #545454;
+    background: #222;
+}
+/* SERVICE CARDS */
+.services-cards .card-container {
+    padding: 30px !important;
+}
+/* MARKETPLACE CARDS */
+#marketplace .card-container {
+    padding: 20px !important;
+}
+
+/* TESTIMONY CARDS */
+.testimony-cards .card-container {
+    padding: 30px !important;
+}
+.testimony-cards .card-container p {
+    margin-bottom: 6px;
+}
+/* WORKS CARDS */
+.service-cards
+.testimony-cards,
+.works-cards {
+    padding: 45px 0 45px !important;
+}
+.works-cards .card-container {
+    width: 288px;
+    padding: 0 !important;
+    
+}
+.works-cards .card-container:not(.card-no-shadow) {
+    box-shadow: 10px 5px 30px 0px rgba(60, 69, 233, 0.46);
+}
+.works-cards .card-bg {
+    background-image: url('/assets/img/background-works.svg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    border-radius: 25px 25px 0 0 !important;
+}
+.works-cards .card-bg-active{
+    background-image: url('/assets/img/background-works-active.svg');
+}
+
+#work button {
+    margin-top: 20px;
+}
+
+
+/* SECTIONS */
+h3 {
+    max-width: 766px;
+}
+#service, #testimony, #work {
+    display: flex !important;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+
+/* FOOTER */
+/* NEWSLETTER */
+.input-group {
+    display: flex;
+    width: 403px;
+    height: 45px;
+    flex-shrink: 0;
+}
+.input-group input {
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    border-radius: 30px !important;
+}
+.input-group input::placeholder {
+    color: #545454;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.input-group button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -2px;
+    right: -2px;
+    border-radius: 30px !important;
+    padding: 15px 11px !important;
+    height: 45px;
+}
+.input-group,
+.input-group input,
+.input-group input:focus{
+    border: 2px solid #545454;
+    background: #222 !important;
+    border-radius: 30px !important;
+}
+.input-group input,
+.input-group input:focus{ 
+    border: none;
+    box-shadow: none;
+}
+
+
+/* RESPONSIVE: MEDIUM SCREENS */
+@media (min-width: 993px) {
+    #service .titles, #testimony .titles, #work .titles {
+        display: flex !important;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /* TESTIMONY CARDS */
+    .testimony-cards .col, .testimony-cards .card-container {
+        width: 100% !important;;
+    }
+}
+
+/* RESPONSIVE: MEDIUM SCREENS */
+@media (max-width: 1400px) {
+    /* CARDS */
+    #service, #testimony, #work {
+        display: block !important;
+    }
+   
+    /* SERVICE CARDS */
+    .services-cards .col, .services-cards .card-container{
+        width: 271px;
+        max-height: 306px;
+        flex-shrink: 0;
+    }
+    /* SERVICE CARDS + WORK CARDS */
+    .services-cards,
+    .works-cards {
+        display: flex;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+}
+
+/* RESPONSIVE: SMALLER MEDIUM SCREENS */
+@media (max-width: 992px) {
+    /* TEXTS */
+    h1, h2, h3{
+        text-align: left !important;
+        font-size: 24px !important;
+    }
+    p {
+        font-size: 14px !important;
+    }
+
+    /* PADDING& MARGIN: SECTION + FOOTER*/
+    section {
+        padding: 20px;
+    }
+    footer .row{
+        padding: 20px 20px 0 20px;
+    }
+    footer .border-top {
+        margin: 0 20px;
+    }
+
+    /* SECTION SERVICES */
+    h3 {
+        max-width: 766px;
+    }
+
+    /* MARKETPLACE CARD */
+    #marketplace .card-footer img {
+        width: 50px;
+    }
+    
+    #marketplace .card-footer p {
+        font-size: 9px !important;
+    }
+    
+    /* TESTIMONY CARDS */
+    .testimony-cards .col, .testimony-cards .card-container {
+        width: 271px;
+        height: 450px;
+        flex-shrink: 0;
+    }
+    .testimony-cards {
+        display: flex;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    /* WORKS CARDS */
+    .works-cards > .col{
+        margin-right: 25px;
+    }
+}
+
+/* RESPONSIVE: SMALL SCREENS */
+@media (max-width: 768px) {
+    /* TEXTS */
+    h1, h2, h3{
+        text-align: left !important;
+        font-size: 24px !important;
+    }
+    p {
+        font-size: 14px !important;
+    }
+
+    /* CONTAINER */
+    .container {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* BORDERS */
+    .gradient-border::before {
+        background: none !important;
+        border: none !important;
+    }
+    .gradient-border-home::before,
+    .gradient-border-home {
+        border-radius: 0 0 15px 15px;
+    }
+    
+
+    /* NAVBAR */
+    .navbar-toggler {
+        display: flex;
+    }
+   .navbar ul{
+    align-items: flex-start !important;
+   }
+
+   /*SECTION HOME IMG*/
+    #home img {
+        width: 200px;
+        margin-top: 60px;
+    }
+
+    /* WORKS CARDS */
+    .services-cards,
+    .testimony-cards,
+    .works-cards {
+        padding: 25px 0 25px;
+    }
+    .works-cards > .col{
+        margin-right: 10px;
+    }
+
+   /* FOOTER */
+    /* NEWSLETTER */
+    .input-group {
+        height: 35px;
+    }
+    .input-group button {
+        padding: 11.725px 8.598px!important;
+        height: 35px;
+    }
+}
