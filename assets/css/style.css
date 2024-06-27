@@ -66,6 +66,9 @@ footer h5 {
     background-color: #181a1e;
     transition: background-color 0.3s ease-in-out;
 }
+.navbar ul li {
+    margin-right: 54px;
+}
 
 
 /* GRADIENT EFFECT */
@@ -278,6 +281,11 @@ h3 {
         font-size: 14px !important;
     }
 
+    /* NAVBAR */
+    .navbar ul li {
+        margin-right: 10px;
+    }
+
     /* PADDING& MARGIN: SECTION + FOOTER*/
     section {
         padding: 20px;
@@ -362,6 +370,9 @@ h3 {
    .navbar ul{
     align-items: flex-start !important;
    }
+   .navbar ul li {
+    margin-right: auto;
+}
 
    /*SECTION HOME IMG*/
     #home img {
